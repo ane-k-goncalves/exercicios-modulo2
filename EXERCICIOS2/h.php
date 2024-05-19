@@ -25,9 +25,10 @@
     }
     
     if($pagamento <= 3){
-        $valorApagar = ($preco * $desconto) - $preco;
+        $valorApagar = $preco - ($preco * $desconto);
         echo "o valor a ser pago pelo produto é: $valorApagar \n";
     }else {
         $valorApagar = ($preco * $juros) + $preco ;
         echo "o valor a ser pago pelo produto é: $valorApagar \n";
     }
+?>
